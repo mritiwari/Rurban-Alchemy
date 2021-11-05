@@ -4,90 +4,156 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <style>
-body {
-  font-family: "Times New Roman", Georgia, Serif;
-  background-image: url("Image/rurban.png");
-  background-repeat: no-repeat, repeat;
-  background-color: #cccccc;
-  opacity: 0.6;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
-}
-#contact{
-  height: 200px;
-  width: 250px;
-  margin: 0px;
-  background-color: #b1eaf8;
-  border-radius: 30px;
-  text-align: center;
-  opacity: 1;
-  text-decoration-color: black;
-
-}
+    body {
+        font-family: "Times New Roman", Georgia, Serif;
+        /* background-image: url("Image/rurban.png"); */
+        background-repeat: no-repeat, repeat;
+        background-color: #cccccc;
+        opacity: 0.6;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+    }
+    
+    #contact {
+        height: 200px;
+        width: 250px;
+        margin: 0px;
+        background-color: #b1eaf8;
+        border-radius: 30px;
+        text-align: center;
+        opacity: 1;
+        text-decoration-color: black;
+    }
+    
+    .bg {
+        background-image: url("https://www.indiafilings.com/learn/wp-content/uploads/2019/07/National-Rurban-Mission.jpg");
+        opacity: 1;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+        border: 2px solid red;
+        border-radius: 25px;
+        background-color: black;
+        flex-direction: row;
+    }
+    
+    .title {
+        color: white;
+        /* font-size: 18px; */
+        margin: 1px;
+    }
+    /* button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    } */
+    
+    a {
+        text-decoration: none;
+        font-size: 22px;
+        color: rgb(248, 241, 241);
+    }
+    
+    button:hover,
+    a:hover {
+        opacity: 0.7;
+    }
+    
+    img {
+        border-radius: 25px;
+    }
 </style>
-<body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button">Rurban Alchemy</a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+            <a href="#home" class="w3-bar-item w3-button">Rurban Alchemy</a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+        <img class="w3-image" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+        <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+            <h1 class="w3-xxlarge">Le Catering</h1>
+        </div>
+    </header>
+
+    <div class="bg">
+        <!-- Page content -->
+        <div class="w3-content" style="max-width:1100px">
+
+            <!-- About Section -->
+            <div class="w3-row w3-padding-64" id="about">
+                <div class="w3-col m6 w3-padding-large w3-hide-small">
+                    <!-- <img src="/Image/rurban.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750"> -->
+                </div>
+
+                <div class="w3-col m6 w3-padding-large">
+                    <h1 class="w3-center">Rurban Alchemy</h1>
+                    <h5 class="w3-center</h5>
+      <p class=" w3-large " style="text-align: center; ">Rurban Alchemy LLP. <br>
+        An Organization devoted to create E2E Employment and talent transformation for village and rural area
+        India</p>
+      <p class=" w3-large w3-text-grey w3-hide-medium "></p>
     </div>
   </div>
 </div>
-
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img class="w3-image" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-    <h1 class="w3-xxlarge">Le Catering</h1>
-  </div>
-</header>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:1100px">
-
-  <!-- About Section -->
-  <div class="w3-row w3-padding-64" id="about">
-    <div class="w3-col m6 w3-padding-large w3-hide-small">
-     <!-- <img src="/Image/rurban.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750"> -->
-    </div>
-
-    <div class="w3-col m6 w3-padding-large">
-      <h1 class="w3-center">Rurban Alchemy</h1><br>
-      <h5 class="w3-center</h5>
-      <p class="w3-large">Rurban Alchemy LLP.
-        An Organization Devoted to create E2E Employment And talent transformation for village and rural area
-        India</p>
-      <p class="w3-large w3-text-grey w3-hide-medium"></p>
-    </div>
-  </div>
   
-  <hr>
   
   <!-- Menu Section -->
   
   <!-- Contact Section -->
-  <div id="contact">
-    <h1>Contact</h1>
-    <p><b>Lucknow / Goralhpur / Purvanchal</b></p>
-    <p>Phone : +91-9916799911</p>
-    <p>Email : info@rurbanalchemy.com</p>
+
+  <div class="card ">
+    <img src="Image/nitesh.jpg " alt="John " style="width:100% ">
+    <h1>Nitesh Pandey</h1>
+    <p class="title ">Lucknow / Gorakhpur / Purvanchal</p>
+    <p class="title ">Phone : +91-9916799911</p>
+    <p class="title ">Email : info@rurbanalchemy.com</p>
   </div>
+
 <!-- End page content -->
 </div>
 
+
 <!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-32">
+<footer class=" w3-center w3-light-grey w3-padding-32 ">
  
-  <p>Powered by <title="Rurban Alchemy" target="_blank" class="w3-hover-text-green">Rurban Alchemy</a></p>
+  <p>Powered by <title=" Rurban Alchemy " target=" _blank " class=" w3-hover-text-green ">Rurban Alchemy</a></p>
 </footer>
 </body>
 </html>
